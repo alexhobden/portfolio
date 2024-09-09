@@ -8,7 +8,7 @@ import SkillBox from "./components/skillBox";
 function App() {
   return (
     <>
-      <div className="h-[100vh]">
+      <div className="h-[100vh] ">
         <div className="absolute  font-roboto font-bold text-[20rem] -z-10 ml-20">
           WEB DESIGNER
         </div>

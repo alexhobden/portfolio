@@ -7,6 +7,9 @@ module.exports = {
         roboto: ["roboto", "sans-serif"],
         robotoblack: ["robotoblack", "sans-serif"],
       },
+      boxShadow: {
+        glow: "0 0 400px rgba(255, 255, 255, 0.6), 0 0 800px rgba(255, 255, 255, 0.4)",
+      },
     },
   },
   plugins: [
