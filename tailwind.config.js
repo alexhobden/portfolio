@@ -6,9 +6,14 @@ module.exports = {
       fontFamily: {
         roboto: ["roboto", "sans-serif"],
         robotoblack: ["robotoblack", "sans-serif"],
+        inria: ["inria", "sans-serif"],
       },
       boxShadow: {
-        glow: "0 0 400px rgba(255, 255, 255, 0.6), 0 0 800px rgba(255, 255, 255, 0.4)",
+        glow: "0 0 300px rgba(255, 230, 230, 0.6), 0 0 600px rgba(255, 230, 230, 0.4)",
+        text: "0 0 300px rgba(255, 230, 230, 0.2)",
+      },
+      borderColor: {
+        "custom-opacity": "rgba(255, 255, 255, 0.6)", // 70% opacity
       },
     },
   },

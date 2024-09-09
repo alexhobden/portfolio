@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import "./fonts.css";
 import Portrait from "./components/portrait";
 import Header from "./components/header";
 import InfoBox from "./components/infoBox";
@@ -9,7 +10,10 @@ function App() {
   return (
     <>
       <div className="h-[100vh] ">
-        <div className="absolute  font-roboto font-bold text-[20rem] -z-10 ml-20">
+        <div
+          className="absolute
+         font-roboto font-bold text-[20rem] -z-10 ml-20"
+        >
           WEB DESIGNER
         </div>
 
