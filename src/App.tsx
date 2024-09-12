@@ -19,29 +19,20 @@ function App() {
       <div className="fixed bottom-8 right-8">
         <img src="./icons/downarrow.svg" alt="" className="w-8 h-8" />
       </div>
-      <div className="h-[100vh] ">
-        {/* <div
-          className="absolute
-         font-roboto font-bold text-[20rem] -z-20 ml-20"
-        >
-          <p>WEB</p>
-          <p className="text-shadow-btext">DESIGNER</p>
-        </div> */}
-        {/* <div className="-z-40 absolute bg-[#1b0b06] w-full h-fullflex"></div> */}
-        {/* <div className="-z-50 border-b-2 border-custom-opacity absolute w-[50%] h-[62%] shadow-lamp"></div> */}
-
+      <div className="h-[200vh] flex">
         <div className="flex">
           <div className="h-[40rem] flex items-center justify-start">
             <InfoBox></InfoBox>
           </div>
+        </div>
+        <div className="h-[170vh]">
           <Portrait></Portrait>
         </div>
-        <div></div>
       </div>
       <div className="w-full  h-[100vh]">
         <div className="h-[45vh] flex flex-col items-center justify-center">
           <div className="text-xl rounded-3xl font-comfortaa font-bold  mb-16 text-[#ffd8d3]">
-            These are the Skills I work with
+            I work with
           </div>
           <div className="text-5xl rounded-3xl font-comfortaa font-extrabold text-shadow-textr text-[#ffd8d3]">
             {currentSkill

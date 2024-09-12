@@ -15,12 +15,16 @@ const SkillBox: React.FC<SkillBoxProps> = ({ skill, changeSkill }) => {
     >
       <div
         className="before-glow"
-        style={{ backgroundImage: `url(./skills/${skill}.png)` }}
+        style={{
+          backgroundImage: `url(./skills/${skill}.png)`,
+          backgroundSize: "contain",
+          backgroundRepeat: "no-repeat",
+        }}
       >
         <img
           src={`./skills/${skill}.png`}
           alt=""
-          className="max-h-16 object-contain"
+          className="max-h-14 object-contain"
         />
       </div>
     </div>
