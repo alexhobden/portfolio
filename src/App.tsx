@@ -5,6 +5,7 @@ import Portrait from "./components/portrait";
 import Header from "./components/header";
 import InfoBox from "./components/infoBox";
 import SkillBox from "./components/skillBox";
+import Profile from "./components/profile";
 
 function App() {
   const [currentSkill, setCurrentSkill] = useState<string>();
@@ -21,11 +22,14 @@ function App() {
       </div>
       <div className="h-[200vh] flex">
         <div className="flex">
-          <div className="h-[40rem] flex items-center justify-start">
+          <div className=" flex flex-col items-center justify-start">
+            <div className="h-[18vh]"></div>
             <InfoBox></InfoBox>
+            <div className="h-[80vh] w-full"></div>
+            <Profile></Profile>
           </div>
         </div>
-        <div className="h-[170vh]">
+        <div className="h-[180vh]">
           <Portrait></Portrait>
         </div>
       </div>
@@ -34,9 +38,19 @@ function App() {
           <div className="text-xl rounded-3xl font-comfortaa font-bold  mb-16 text-[#ffd8d3]">
             I work with
           </div>
-          <div className="text-5xl rounded-3xl font-comfortaa font-extrabold text-shadow-textr text-[#ffd8d3]">
+          <div className="flex space-x-1 text-5xl rounded-3xl font-comfortaa font-extrabold text-shadow-textr text-[#ffd8d3]">
             {currentSkill
-              ? currentSkill.charAt(0).toUpperCase() + currentSkill.slice(1)
+              ? (currentSkill.charAt(0).toUpperCase() + currentSkill.slice(1))
+                  .split("")
+                  .map((letter, index) => (
+                    <span
+                      key={`${letter}-${index}`}
+                      className={`inline-block opacity-0 animate-fall`}
+                      style={{ animationDelay: `${index * 0.1}s` }}
+                    >
+                      {letter}
+                    </span>
+                  ))
               : ""}
           </div>
         </div>
@@ -69,7 +83,7 @@ function App() {
         <div className="flex justify-center">
           <SkillBox changeSkill={handleSkillChange} skill="figma"></SkillBox>
           <SkillBox changeSkill={handleSkillChange} skill="neo4J"></SkillBox>
-          <SkillBox changeSkill={handleSkillChange} skill="nodejs"></SkillBox>
+          <SkillBox changeSkill={handleSkillChange} skill="jest"></SkillBox>
           <SkillBox changeSkill={handleSkillChange} skill="graphQL"></SkillBox>
           <SkillBox changeSkill={handleSkillChange} skill="blender"></SkillBox>
           <SkillBox changeSkill={handleSkillChange} skill="unity"></SkillBox>

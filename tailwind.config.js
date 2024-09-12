@@ -3,6 +3,15 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      keyframes: {
+        fall: {
+          "0%": { transform: "translateY(-50px)", opacity: "0" },
+          "100%": { transform: "translateY(0)", opacity: "1" },
+        },
+      },
+      animation: {
+        fall: "fall 0.25s ease-out forwards",
+      },
       fontFamily: {
         roboto: ["roboto", "sans-serif"],
         robotoblack: ["robotoblack", "sans-serif"],
@@ -13,7 +22,7 @@ module.exports = {
         glow: "0 0 180px rgba(255, 230, 230, 0.3), 0 0 200px rgba(255, 130, 50, 0.2)",
         boxglow: "0 0 20px rgba(255, 130, 50, 0.8)",
         innerboxglow:
-          "inset -1px -1px 10px rgba(0,0,0, 0.4), inset 1px 1px 10px rgba(255,255,255, 0.4), 0 0 20px rgba(255, 130, 50, 0.8)",
+          "inset 0 0 20px rgba(255, 130, 50, 0.8), 0 0 20px rgba(255, 130, 50, 0.8)",
         lamp: "0 50px 100px rgba(255, 130, 50, 0.5), 0 50px 200px rgba(255, 130, 50, 0.3)",
         inlamp: "inset 0 50px 100px rgba(255, 130, 50, 0.6)",
         uplamp: "0 -200px 100px rgba(255, 130, 50, 0.2)",
@@ -45,6 +54,11 @@ module.exports = {
             borderRadius: "inherit",
             filter: "blur(0.8rem) saturate(3)",
           },
+        },
+
+        ".parallax": {
+          transform: "translateX(var(--scroll-offset))",
+          transition: "transform 0.1s ease-out",
         },
       });
     },

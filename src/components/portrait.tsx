@@ -1,9 +1,9 @@
 const Portrait: React.FC = () => {
   return (
     <img
-      src="/images/full_small.png"
+      src="/images/desk2.jpg"
       alt=""
-      className="sticky ml-40 top-32 rounded-[4rem] w-[20rem] object-contain mt-12 shadow-glow self-start"
+      className="sticky ml-40 top-40 rounded-[4rem] w-[20rem] object-contain mt-12 shadow-glow self-start"
     />
   );
 };
