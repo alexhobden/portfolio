@@ -26,11 +26,12 @@ function App() {
             <div className="h-[18vh]"></div>
             <InfoBox></InfoBox>
             <div className="h-[80vh] w-full"></div>
-            <Profile></Profile>
           </div>
         </div>
-        <div className="h-[180vh]">
-          <Portrait></Portrait>
+        <div className="pl-32  h-[180vh]">
+          <Profile>
+            <Portrait></Portrait>
+          </Profile>
         </div>
       </div>
       <div className="w-full  h-[100vh]">
@@ -67,11 +68,16 @@ function App() {
             changeSkill={handleSkillChange}
             skill="typescript"
           ></SkillBox>
+          <SkillBox
+            changeSkill={handleSkillChange}
+            skill="shellscript"
+          ></SkillBox>
         </div>
         <div className="flex justify-center">
           <SkillBox changeSkill={handleSkillChange} skill="threejs"></SkillBox>
           <SkillBox changeSkill={handleSkillChange} skill="tailwind"></SkillBox>
           <SkillBox changeSkill={handleSkillChange} skill="visjs"></SkillBox>
+          <SkillBox changeSkill={handleSkillChange} skill="rxjs"></SkillBox>
           <SkillBox
             changeSkill={handleSkillChange}
             skill="framermotion"
@@ -83,6 +89,7 @@ function App() {
         <div className="flex justify-center">
           <SkillBox changeSkill={handleSkillChange} skill="figma"></SkillBox>
           <SkillBox changeSkill={handleSkillChange} skill="neo4J"></SkillBox>
+          <SkillBox changeSkill={handleSkillChange} skill="axios"></SkillBox>
           <SkillBox changeSkill={handleSkillChange} skill="jest"></SkillBox>
           <SkillBox changeSkill={handleSkillChange} skill="graphQL"></SkillBox>
           <SkillBox changeSkill={handleSkillChange} skill="blender"></SkillBox>

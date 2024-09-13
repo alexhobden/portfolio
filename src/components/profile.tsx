@@ -1,8 +1,13 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
-const Profile: React.FC = () => {
+interface ProfileProps {
+  children?: React.ReactNode;
+}
+
+const Profile: React.FC<ProfileProps> = ({ children }) => {
   const [showDiv, setShowDiv] = useState(false);
+  const [showText, setShowText] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,24 +28,49 @@ const Profile: React.FC = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  useEffect(() => {
+    if (showDiv) {
+      const timer = setTimeout(() => {
+        setShowText(true);
+      }, 800);
+
+      return () => clearTimeout(timer);
+    } else {
+      setShowText(false);
+    }
+  }, [showDiv]);
+
   return (
     <>
-      {showDiv && (
-        <motion.div
-          animate={{
-            borderColor: "white", // The final border color
-            borderWidth: "2px",
-          }}
-          initial={{ borderColor: "transparent", borderWidth: "0" }}
-          transition={{
-            duration: 2, // Animation duration
-            ease: "easeInOut", // Easing function
-          }}
-          className="text-white fixed top-32 left-[36rem]  rounded-[4rem] h-[29rem] w-[56rem] shadow-innerboxglow "
-        >
-          Hello im Alex and I like React a lot
-        </motion.div>
-      )}
+      <motion.div
+        animate={showDiv ? { width: "55rem", x: "-63%" } : { width: "22rem" }}
+        initial={{ width: "22rem", x: "0%" }}
+        transition={{
+          duration: 0.7, // Animation duration
+          ease: "easeInOut", // Easing function
+        }}
+        className="text-white flex justify-end rounded-[5rem] shadow-innerboxglow p-4 sticky border-white border-2  top-40"
+      >
+        {showText && (
+          <div className="w-full p-12 font-inria text-xl">
+            <p>
+              Hello, my Name is Alex Hobden and I'm a web designer and developer
+              from Germany.
+            </p>
+            <br />
+            <p>I love both coding and designing</p>
+            <br />
+            <p>
+              Over the last 2 years as a professional full stack developer, I've
+              refined my skills to craft solutions that are both beautiful and
+              functional. Let's create something exceptional together!
+            </p>
+          </div>
+          //   </motion.div>
+        )}
+        {children}
+      </motion.div>
     </>
   );
 };
