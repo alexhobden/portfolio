@@ -61,11 +61,7 @@ const Profile: React.FC<ProfileProps> = ({ children }) => {
             <br />
             <p>I love both coding and designing</p>
             <br />
-            <p>
-              Over the last 2 years as a professional full stack developer, I've
-              refined my skills to craft solutions that are both beautiful and
-              functional. Let's create something exceptional together!
-            </p>
+            <p>I would love working with you!</p>
           </div>
           //   </motion.div>
         )}
