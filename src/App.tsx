@@ -29,7 +29,7 @@ function App() {
             <div id="about-me"></div>
           </div>
         </div>
-        <div className="2xl:pl-32 pl-12  h-[180vh]">
+        <div className="2xl:pl-32 pl-12 h-[180vh]">
           <Profile>
             <Portrait></Portrait>
           </Profile>
@@ -103,25 +103,31 @@ function App() {
       <div id="contact" className="w-full h-[100vh]">
         <div className="w-full h-full flex flex-col items-center justify-center text-center font-comfortaa font-bold text-[#ffd8d3] text-xl">
           <div className="mb-20">
-            The contact formular will come just right here. While it's being
+            The contact formular will go just right here. While it's being
             developed take a look at my other pages:
           </div>
           <div className="flex">
             <a
               href="https://wavy.hobden.one"
               className="text-[#ffffff] hover:text-blue-200 hover:cursor-pointer text-shadow-textr mx-12"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <p>Wavy (Work in Progress)</p>
             </a>
             <a
               href="https://linkedin.com/in/alexander-hobden-982a29204"
               className="text-[#ffffff] hover:text-blue-200 hover:cursor-pointer text-shadow-textr mx-12"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <p>Linked In</p>
             </a>
             <a
               href="https://github.com/alexhobden"
               className="text-[#ffffff] hover:text-blue-200 hover:cursor-pointer text-shadow-textr mx-12"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <p>GitHub</p>
             </a>

@@ -8,7 +8,6 @@ const InfoBox: React.FC = () => {
       const scrollPosition = window.scrollY;
 
       const maxTranslation = 300;
-      // Change this multiplier to adjust how fast the text moves
       setScrollX(Math.min(scrollPosition * 0.5, maxTranslation));
     };
 
