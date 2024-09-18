@@ -7,9 +7,9 @@ const Header: React.FC = () => {
         Hi. I AM ALEX HOBDEN
       </div>
       <div className="flex-auto"></div>
-      <HeaderButton title="Projects"></HeaderButton>
-      <HeaderButton title="About Me"></HeaderButton>
-      <HeaderButton title="Contact Me"></HeaderButton>
+      <HeaderButton title="About Me" reference="about-me"></HeaderButton>
+      <HeaderButton title="My Skills" reference="skills"></HeaderButton>
+      <HeaderButton title="Contact Me" reference="contact"></HeaderButton>
     </div>
   );
 };

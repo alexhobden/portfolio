@@ -14,3 +14,7 @@ body {
   @apply bg-diagonal-gradient;
   @apply overflow-x-hidden;
 }
+
+html {
+  scroll-behavior: smooth;
+}
