@@ -20,7 +20,7 @@ function App() {
       {/* <div className="fixed bottom-8 right-8">
         <img src="./icons/downarrow.svg" alt="" className="w-8 h-8" />
       </div> */}
-      <div className="h-[200vh] flex">
+      <div className="h-[200vh] flex w-full">
         <div className="flex">
           <div className=" flex flex-col items-center justify-start">
             <div className="h-[18vh]"></div>
@@ -29,7 +29,7 @@ function App() {
             <div id="about-me"></div>
           </div>
         </div>
-        <div className="pl-32  h-[180vh]">
+        <div className="2xl:pl-32 pl-12  h-[180vh]">
           <Profile>
             <Portrait></Portrait>
           </Profile>
@@ -100,7 +100,34 @@ function App() {
           <SkillBox changeSkill={handleSkillChange} skill="unity"></SkillBox>
         </div>
       </div>
-      <div id="contact" className="w-full h-[100vh]"></div>
+      <div id="contact" className="w-full h-[100vh]">
+        <div className="w-full h-full flex flex-col items-center justify-center text-center font-comfortaa font-bold text-[#ffd8d3] text-xl">
+          <div className="mb-20">
+            The contact formular will come just right here. While it's being
+            developed take a look at my other pages:
+          </div>
+          <div className="flex">
+            <a
+              href="www.wavy.hobden.one"
+              className="text-[#ffffff] hover:text-blue-200 hover:cursor-pointer text-shadow-textr"
+            >
+              <p>Wavy (Work in Progress)</p>
+            </a>
+            <a
+              href="www.linkedin.com/in/alexander-hobden-982a29204"
+              className="text-[#ffffff] hover:text-blue-200 hover:cursor-pointer text-shadow-textr"
+            >
+              <p>Linked In</p>
+            </a>
+            <a
+              href="https://github.com/alexhobden"
+              className="text-[#ffffff] hover:text-blue-200 hover:cursor-pointer text-shadow-textr"
+            >
+              <p>GitHub</p>
+            </a>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
