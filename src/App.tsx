@@ -108,20 +108,20 @@ function App() {
           </div>
           <div className="flex">
             <a
-              href="www.wavy.hobden.one"
-              className="text-[#ffffff] hover:text-blue-200 hover:cursor-pointer text-shadow-textr"
+              href="https://wavy.hobden.one"
+              className="text-[#ffffff] hover:text-blue-200 hover:cursor-pointer text-shadow-textr mx-12"
             >
               <p>Wavy (Work in Progress)</p>
             </a>
             <a
-              href="www.linkedin.com/in/alexander-hobden-982a29204"
-              className="text-[#ffffff] hover:text-blue-200 hover:cursor-pointer text-shadow-textr"
+              href="https://linkedin.com/in/alexander-hobden-982a29204"
+              className="text-[#ffffff] hover:text-blue-200 hover:cursor-pointer text-shadow-textr mx-12"
             >
               <p>Linked In</p>
             </a>
             <a
               href="https://github.com/alexhobden"
-              className="text-[#ffffff] hover:text-blue-200 hover:cursor-pointer text-shadow-textr"
+              className="text-[#ffffff] hover:text-blue-200 hover:cursor-pointer text-shadow-textr mx-12"
             >
               <p>GitHub</p>
             </a>
