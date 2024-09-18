@@ -17,16 +17,16 @@ function App() {
   return (
     <>
       <Header />
-      <div className="fixed bottom-8 right-8">
+      {/* <div className="fixed bottom-8 right-8">
         <img src="./icons/downarrow.svg" alt="" className="w-8 h-8" />
-      </div>
+      </div> */}
       <div className="h-[200vh] flex">
         <div className="flex">
           <div className=" flex flex-col items-center justify-start">
             <div className="h-[18vh]"></div>
             <InfoBox></InfoBox>
             <div className="h-[50vh] w-full"></div>
-            <section id="about-me"></section>
+            <div id="about-me"></div>
           </div>
         </div>
         <div className="pl-32  h-[180vh]">
@@ -36,7 +36,10 @@ function App() {
         </div>
       </div>
       <div className="w-full  h-[100vh]">
-        <div className="h-[45vh] flex flex-col items-center justify-center">
+        <div
+          id="skills"
+          className="h-[45vh] flex flex-col items-center justify-center"
+        >
           <div className="text-xl rounded-3xl font-comfortaa font-bold  mb-16 text-[#ffd8d3]">
             I work with
           </div>
@@ -97,6 +100,7 @@ function App() {
           <SkillBox changeSkill={handleSkillChange} skill="unity"></SkillBox>
         </div>
       </div>
+      <div id="contact" className="w-full h-[100vh]"></div>
     </>
   );
 }
