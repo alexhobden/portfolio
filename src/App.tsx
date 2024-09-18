@@ -21,7 +21,7 @@ function App() {
         <img src="./icons/downarrow.svg" alt="" className="w-8 h-8" />
       </div> */}
       <div className="h-[200vh] flex w-full">
-        <div className="flex">
+        <div className="flex w-[50%]">
           <div className=" flex flex-col items-center justify-start">
             <div className="h-[18vh]"></div>
             <InfoBox></InfoBox>
@@ -29,7 +29,7 @@ function App() {
             <div id="about-me"></div>
           </div>
         </div>
-        <div className="2xl:pl-32 pl-12 h-[180vh]">
+        <div className="w-[50%] h-[180vh]">
           <Profile>
             <Portrait></Portrait>
           </Profile>
