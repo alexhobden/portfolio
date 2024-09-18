@@ -1,9 +1,9 @@
 const Portrait: React.FC = () => {
   return (
     <img
-      src="/images/profil_shadow.png"
+      src="/images/desk2.jpg"
       alt=""
-      className="mr-40 -mt-32 w-[40rem] object-contain self-start"
+      className=" rounded-[4rem] w-[20rem] object-contain shadow-glow self-start"
     />
   );
 };

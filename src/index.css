@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import "./fonts.css";
+
+@layer utilities {
+  .bg-diagonal-gradient {
+    background: linear-gradient(45deg, #272727, #360d02);
+  }
+}
+
+body {
+  @apply bg-diagonal-gradient;
+  @apply overflow-x-hidden;
+}
