@@ -25,7 +25,8 @@ function App() {
           <div className=" flex flex-col items-center justify-start">
             <div className="h-[18vh]"></div>
             <InfoBox></InfoBox>
-            <div className="h-[80vh] w-full"></div>
+            <div className="h-[50vh] w-full"></div>
+            <section id="about-me"></section>
           </div>
         </div>
         <div className="pl-32  h-[180vh]">

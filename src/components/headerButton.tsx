@@ -5,7 +5,7 @@ interface HeaderButtonProps {
 const HeaderButton: React.FC<HeaderButtonProps> = ({ title }) => {
   return (
     <div className="w-36 text-[#ffffff] hover:text-blue-200 hover:cursor-pointer text-shadow-textr">
-      {title}
+      <a href="#about-me">{title}</a>
     </div>
   );
 };
