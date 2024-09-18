@@ -55,7 +55,7 @@ function App() {
               : ""}
           </div>
         </div>
-        <div className="flex justify-center">
+        <div className="flex flex-wrap justify-center">
           <SkillBox changeSkill={handleSkillChange} skill="react"></SkillBox>
           <SkillBox changeSkill={handleSkillChange} skill="angular"></SkillBox>
           <SkillBox changeSkill={handleSkillChange} skill="python"></SkillBox>
@@ -73,7 +73,7 @@ function App() {
             skill="shellscript"
           ></SkillBox>
         </div>
-        <div className="flex justify-center">
+        <div className="flex flex-wrap justify-center">
           <SkillBox changeSkill={handleSkillChange} skill="threejs"></SkillBox>
           <SkillBox changeSkill={handleSkillChange} skill="tailwind"></SkillBox>
           <SkillBox changeSkill={handleSkillChange} skill="visjs"></SkillBox>
@@ -86,7 +86,7 @@ function App() {
           <SkillBox changeSkill={handleSkillChange} skill="css"></SkillBox>
           <SkillBox changeSkill={handleSkillChange} skill="daisyUI"></SkillBox>
         </div>
-        <div className="flex justify-center">
+        <div className="flex flex-wrap justify-center">
           <SkillBox changeSkill={handleSkillChange} skill="figma"></SkillBox>
           <SkillBox changeSkill={handleSkillChange} skill="neo4J"></SkillBox>
           <SkillBox changeSkill={handleSkillChange} skill="axios"></SkillBox>
