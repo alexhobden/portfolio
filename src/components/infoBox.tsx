@@ -19,7 +19,7 @@ const InfoBox: React.FC = () => {
   }, []);
 
   return (
-    <div className=" h-96 ml-40 -mt-4 w-[50rem] font-inria text-[40px] p-8 text-white">
+    <div className=" h-96 ml-40 -mt-4 sm:w-[20rem] xl:w-[50rem] font-inria text-[40px] p-8 text-white">
       <div className="pl-8 pr-16 pt-6">
         <p
           style={{
@@ -36,11 +36,11 @@ const InfoBox: React.FC = () => {
             transition: "transform 0.1s ease-out",
           }}
         >
-          <h2 className="text-9xl">DESIGNER</h2>
+          <h2 className="sm:text-4xl xl:text-9xl">DESIGNER</h2>
           <p className="ml-3">&</p>
         </div>
         <div
-          className="text-9xl rounded-3xl text-shadow-textr text-[#ffd8d3]"
+          className="sm:text-4xl xl:text-9xl rounded-3xl text-shadow-textr text-[#ffd8d3]"
           style={{
             transform: `translateX(${scrollX * 2}px)`,
             transition: "transform 0.1s ease-out",

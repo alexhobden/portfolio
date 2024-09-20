@@ -29,10 +29,14 @@ function App() {
             <div id="about-me"></div>
           </div>
         </div>
-        <div className="w-[50%] h-[180vh]">
-          <Profile>
-            <Portrait></Portrait>
-          </Profile>
+        <div className="w-full h-[180vh]">
+          <div className="sticky flex justify-end top-40">
+            <div className="relative">
+              <Profile>
+                <Portrait></Portrait>
+              </Profile>
+            </div>
+          </div>
         </div>
       </div>
       <div className="w-full  h-[100vh]">
