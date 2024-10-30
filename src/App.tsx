@@ -29,7 +29,7 @@ function App() {
             </Frame>
           </div>
         </div>
-        <div className="flex w-full md:w-[50%]">
+        <div className="flex w-full overflow:hidden md:overflow visible md:w-[50%]">
           <div className=" flex flex-col items-center justify-start">
             <div className="h-[18vh]"></div>
             <InfoBox></InfoBox>
