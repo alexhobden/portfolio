@@ -7,6 +7,8 @@ import InfoBox from "./components/infoBox";
 import SkillBox from "./components/skillBox";
 import Profile from "./components/profile";
 import Frame from "./components/frame";
+import SkillSet from "./components/skillset";
+import SkillSetMobile from "./components/skillsetMobile";
 
 function App() {
   const [currentSkill, setCurrentSkill] = useState<string>();
@@ -71,60 +73,29 @@ function App() {
               : ""}
           </div>
         </div>
-        <div className="flex flex-wrap justify-center">
-          <SkillBox changeSkill={handleSkillChange} skill="react"></SkillBox>
-          <SkillBox changeSkill={handleSkillChange} skill="angular"></SkillBox>
-          <SkillBox changeSkill={handleSkillChange} skill="python"></SkillBox>
-          <SkillBox changeSkill={handleSkillChange} skill="java"></SkillBox>
-          <SkillBox
-            changeSkill={handleSkillChange}
-            skill="javascript"
-          ></SkillBox>
-          <SkillBox
-            changeSkill={handleSkillChange}
-            skill="typescript"
-          ></SkillBox>
-          <SkillBox
-            changeSkill={handleSkillChange}
-            skill="shellscript"
-          ></SkillBox>
+        <div></div>
+        <div className="block md:hidden">
+          <SkillSetMobile
+            handleSkillChange={handleSkillChange}
+          ></SkillSetMobile>
         </div>
-        <div className="flex flex-wrap justify-center">
-          <SkillBox changeSkill={handleSkillChange} skill="threejs"></SkillBox>
-          <SkillBox changeSkill={handleSkillChange} skill="tailwind"></SkillBox>
-          <SkillBox changeSkill={handleSkillChange} skill="visjs"></SkillBox>
-          <SkillBox changeSkill={handleSkillChange} skill="rxjs"></SkillBox>
-          <SkillBox
-            changeSkill={handleSkillChange}
-            skill="framermotion"
-          ></SkillBox>
-          <SkillBox changeSkill={handleSkillChange} skill="nodejs"></SkillBox>
-          <SkillBox changeSkill={handleSkillChange} skill="css"></SkillBox>
-          <SkillBox changeSkill={handleSkillChange} skill="daisyUI"></SkillBox>
-        </div>
-        <div className="flex flex-wrap justify-center">
-          <SkillBox changeSkill={handleSkillChange} skill="figma"></SkillBox>
-          <SkillBox changeSkill={handleSkillChange} skill="neo4J"></SkillBox>
-          <SkillBox changeSkill={handleSkillChange} skill="axios"></SkillBox>
-          <SkillBox changeSkill={handleSkillChange} skill="jest"></SkillBox>
-          <SkillBox changeSkill={handleSkillChange} skill="graphQL"></SkillBox>
-          <SkillBox changeSkill={handleSkillChange} skill="blender"></SkillBox>
-          <SkillBox changeSkill={handleSkillChange} skill="unity"></SkillBox>
+        <div className="md:block hidden">
+          <SkillSet handleSkillChange={handleSkillChange}></SkillSet>
         </div>
       </div>
       <div
         id="contact"
         className="w-full overflow-hidden md:overflow-visible h-[100vh]"
       >
-        <div className="w-full h-full flex flex-col items-center justify-center text-center font-comfortaa font-bold text-[#ffd8d3] text-xl">
+        <div className="w-full p-8 h-full flex flex-col items-center justify-center text-center font-comfortaa font-bold text-[#ffd8d3] text-xl">
           <div className="mb-20">
             The contact formular will go just right here. While it's being
             developed take a look at my other pages:
           </div>
-          <div className="flex">
+          <div className="flex md:flex-row flex-col">
             <a
               href="https://wavy.hobden.one"
-              className="text-[#ffffff] hover:text-blue-200 hover:cursor-pointer text-shadow-textr mx-12"
+              className="text-[#ffffff] hover:text-blue-200 hover:cursor-pointer text-shadow-textr my-8 mx-12"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -132,7 +103,7 @@ function App() {
             </a>
             <a
               href="https://linkedin.com/in/alexander-hobden-982a29204"
-              className="text-[#ffffff] hover:text-blue-200 hover:cursor-pointer text-shadow-textr mx-12"
+              className="text-[#ffffff] hover:text-blue-200 hover:cursor-pointer text-shadow-textr my-8 mx-12"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -140,7 +111,7 @@ function App() {
             </a>
             <a
               href="https://github.com/alexhobden"
-              className="text-[#ffffff] hover:text-blue-200 hover:cursor-pointer text-shadow-textr mx-12"
+              className="text-[#ffffff] hover:text-blue-200 hover:cursor-pointer text-shadow-textr my-8 mx-12"
               target="_blank"
               rel="noopener noreferrer"
             >
