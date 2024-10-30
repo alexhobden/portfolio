@@ -21,7 +21,7 @@ function App() {
       {/* <div className="fixed bottom-8 right-8">
         <img src="./icons/downarrow.svg" alt="" className="w-8 h-8" />
       </div> */}
-      <div className="h-[250vh] flex md:flex-row flex-col w-full">
+      <div className="md:h-[250vh] flex md:flex-row flex-col w-full">
         <div className="block md:hidden relative h-80">
           <div className="flex justify-center mt-8">
             <Frame>
@@ -33,7 +33,7 @@ function App() {
           <div className=" flex flex-col items-center justify-start">
             <div className="h-[18vh]"></div>
             <InfoBox></InfoBox>
-            <div className="h-[50vh] w-full"></div>
+            <div className="h-[50vh] md:block hidden w-full"></div>
             <div id="about-me"></div>
           </div>
         </div>
@@ -47,7 +47,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="w-full  h-[100vh]">
+      <div className="w-full  md:h-[100vh]">
         <div
           id="skills"
           className="h-[45vh] flex flex-col items-center justify-center"
