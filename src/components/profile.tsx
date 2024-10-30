@@ -13,7 +13,7 @@ const Profile: React.FC<ProfileProps> = ({ children }) => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
       const triggerHeightMin = window.innerHeight * 0.78;
-      const triggerHeightMax = window.innerHeight * 1.2;
+      const triggerHeightMax = window.innerHeight * 1.7;
       if (
         scrollPosition >= triggerHeightMin &&
         scrollPosition <= triggerHeightMax
@@ -44,13 +44,13 @@ const Profile: React.FC<ProfileProps> = ({ children }) => {
   return (
     <>
       <motion.div
-        animate={showDiv ? { width: "55rem", x: "-63%" } : { width: "22rem" }}
+        animate={showDiv ? { width: "55rem", x: "-26%" } : { width: "22rem" }}
         initial={{ width: "22rem", x: "0%" }}
         transition={{
           duration: 0.7, // Animation duration
           ease: "easeInOut", // Easing function
         }}
-        className="text-white flex justify-end rounded-[5rem] shadow-innerboxglow p-4 sticky border-white border-2  top-40"
+        className="text-white absolute flex justify-end rounded-[5rem] shadow-innerboxglow p-4 border-white border-2 md:top-4 right-[15vw]"
       >
         {showText && (
           <div className="w-full p-12 font-inria text-xl">
