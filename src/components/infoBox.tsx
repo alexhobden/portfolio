@@ -19,7 +19,7 @@ const InfoBox: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex justify-center md:block h-96 md:ml-40 md:-mt-4 w-full md:w-[50rem] font-inria text-[40px] md:p-8 p-2 text-white">
+    <div className="flex justify-center  md:block h-96 md:ml-40 md:-mt-4 w-full md:w-[50rem] font-inria text-[40px] md:p-8 p-2 text-white">
       <div className="md:pl-8 md:pr-16 md:pt-6 md:text-left text-center">
         <p
           style={{

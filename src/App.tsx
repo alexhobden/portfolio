@@ -29,7 +29,7 @@ function App() {
             </Frame>
           </div>
         </div>
-        <div className="flex w-full overflow:hidden md:overflow visible md:w-[50%]">
+        <div className="flex w-full overflow-hidden md:overflow-visible md:w-[50%]">
           <div className=" flex flex-col items-center justify-start">
             <div className="h-[18vh]"></div>
             <InfoBox></InfoBox>
@@ -112,7 +112,10 @@ function App() {
           <SkillBox changeSkill={handleSkillChange} skill="unity"></SkillBox>
         </div>
       </div>
-      <div id="contact" className="w-full h-[100vh]">
+      <div
+        id="contact"
+        className="w-full overflow-hidden md:overflow-visible h-[100vh]"
+      >
         <div className="w-full h-full flex flex-col items-center justify-center text-center font-comfortaa font-bold text-[#ffd8d3] text-xl">
           <div className="mb-20">
             The contact formular will go just right here. While it's being
