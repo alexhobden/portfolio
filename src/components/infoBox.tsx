@@ -2,17 +2,26 @@ import { useEffect, useState } from "react";
 
 const InfoBox: React.FC = () => {
   const [scrollX, setScrollX] = useState(0);
+  const scrollThreshold = 150;
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-
       const maxTranslation = 300;
-      setScrollX(Math.min(scrollPosition * 0.5, maxTranslation));
+      const isBelowMd = window.innerWidth < 768;
+
+      if (isBelowMd && scrollPosition > scrollThreshold) {
+        setScrollX(
+          Math.min((scrollPosition - scrollThreshold) * 0.1, maxTranslation)
+        );
+      } else if (!isBelowMd) {
+        setScrollX(Math.min(scrollPosition * 0.5, maxTranslation));
+      } else {
+        setScrollX(0);
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };

@@ -53,13 +53,17 @@ const Profile: React.FC<ProfileProps> = ({ children }) => {
         className="text-white absolute flex justify-end rounded-[5rem] shadow-innerboxglow p-4 border-white border-2 md:top-4 right-[15vw]"
       >
         {showText && (
-          <div className="w-full p-12 font-inria text-xl">
+          <div className="w-full p-12 pr-16 font-inria text-xl">
             <p>
               Hello, my Name is Alex Hobden and I'm a web designer and developer
               from Germany.
             </p>
             <br />
-            <p>I love both coding and designing</p>
+            <p>
+              I love both coding, but in addition to the code and logic, I like
+              to implement my own designs with Figma and libraries such as
+              Tailwind and Framer Motion.
+            </p>
             <br />
             <p>I would love working with you!</p>
           </div>
