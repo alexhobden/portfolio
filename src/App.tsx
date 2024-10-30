@@ -6,6 +6,7 @@ import Header from "./components/header";
 import InfoBox from "./components/infoBox";
 import SkillBox from "./components/skillBox";
 import Profile from "./components/profile";
+import Frame from "./components/frame";
 
 function App() {
   const [currentSkill, setCurrentSkill] = useState<string>();
@@ -20,8 +21,15 @@ function App() {
       {/* <div className="fixed bottom-8 right-8">
         <img src="./icons/downarrow.svg" alt="" className="w-8 h-8" />
       </div> */}
-      <div className="h-[200vh] flex w-full">
-        <div className="flex w-[50%]">
+      <div className="h-[250vh] flex md:flex-row flex-col w-full">
+        <div className="block md:hidden relative h-80">
+          <div className="flex justify-center mt-8">
+            <Frame>
+              <Portrait></Portrait>
+            </Frame>
+          </div>
+        </div>
+        <div className="flex w-full md:w-[50%]">
           <div className=" flex flex-col items-center justify-start">
             <div className="h-[18vh]"></div>
             <InfoBox></InfoBox>
@@ -29,7 +37,7 @@ function App() {
             <div id="about-me"></div>
           </div>
         </div>
-        <div className="w-full h-[180vh]">
+        <div className="md:block hidden w-full h-[180vh]">
           <div className="sticky flex justify-end top-40">
             <div className="relative">
               <Profile>

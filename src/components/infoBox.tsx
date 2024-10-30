@@ -19,8 +19,8 @@ const InfoBox: React.FC = () => {
   }, []);
 
   return (
-    <div className=" h-96 ml-40 -mt-4 sm:w-[20rem] xl:w-[50rem] font-inria text-[40px] p-8 text-white">
-      <div className="pl-8 pr-16 pt-6">
+    <div className="flex justify-center md:block h-96 md:ml-40 md:-mt-4 w-full md:w-[50rem] font-inria text-[40px] md:p-8 p-2 text-white">
+      <div className="md:pl-8 md:pr-16 md:pt-6 md:text-left text-center">
         <p
           style={{
             transform: `translateX(${scrollX * 3}px)`,
@@ -30,7 +30,7 @@ const InfoBox: React.FC = () => {
           I'M A WEB
         </p>
         <div
-          className="flex items-end"
+          className="flex md:items-end md:justify-start justify-center"
           style={{
             transform: `translateX(${scrollX * -2}px)`,
             transition: "transform 0.1s ease-out",
